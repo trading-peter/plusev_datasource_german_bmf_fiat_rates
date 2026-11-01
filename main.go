@@ -64,7 +64,7 @@ func (p *BMFRatesPlugin) GetMeta() m.Meta {
 		Category:    "file",
 		Description: "Official monthly Umsatzsteuer-Umrechnungskurse (VAT exchange rates) published by the German Bundesfinanzministerium. These are the legally binding rates for German tax calculations.",
 		Author:      "trading_peter",
-		Version:     "v1.0.0",
+		Version: "v1.1.0",
 		Repository:  "https://github.com/trading-peter/plusev_datasource_german_bmf_fiat_rates",
 		Tags:        []string{"german", "bmf", "fiat", "rates", "tax", "official", "eur"},
 		Contacts: []m.AuthorContact{
