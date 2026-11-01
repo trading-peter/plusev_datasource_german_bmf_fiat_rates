@@ -2,9 +2,7 @@ module github.com/trading-peter/plusev_datasource_german_bmf_fiat_rates
 
 go 1.25.1
 
-replace github.com/plusev-terminal/go-plugin-common => ../plusev/go-plugin-common
-
-require github.com/plusev-terminal/go-plugin-common v1.15.0
+require github.com/plusev-terminal/go-plugin-common/v2 v2.1.0
 
 require (
 	github.com/extism/go-pdk v1.1.3 // indirect

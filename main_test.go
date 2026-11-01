@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	m "github.com/plusev-terminal/go-plugin-common/meta"
+	m "github.com/plusev-terminal/go-plugin-common/v2/meta"
 )
 
 // TestRateLimitsPinned pins the manifest rate-limit table so the declared

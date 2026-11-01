@@ -12,14 +12,14 @@ import (
 	"strings"
 	"time"
 
-	ex "github.com/plusev-terminal/go-plugin-common/datasrc/exchange"
-	"github.com/plusev-terminal/go-plugin-common/logging"
-	m "github.com/plusev-terminal/go-plugin-common/meta"
-	"github.com/plusev-terminal/go-plugin-common/plugin"
-	"github.com/plusev-terminal/go-plugin-common/requester"
-	rt "github.com/plusev-terminal/go-plugin-common/requester/types"
-	"github.com/plusev-terminal/go-plugin-common/trading"
-	"github.com/plusev-terminal/go-plugin-common/wasmutils"
+	ex "github.com/plusev-terminal/go-plugin-common/v2/datasrc/exchange"
+	"github.com/plusev-terminal/go-plugin-common/v2/logging"
+	m "github.com/plusev-terminal/go-plugin-common/v2/meta"
+	"github.com/plusev-terminal/go-plugin-common/v2/plugin"
+	"github.com/plusev-terminal/go-plugin-common/v2/requester"
+	rt "github.com/plusev-terminal/go-plugin-common/v2/requester/types"
+	"github.com/plusev-terminal/go-plugin-common/v2/trading"
+	"github.com/plusev-terminal/go-plugin-common/v2/wasmutils"
 )
 
 // ============================================================================
@@ -139,7 +139,7 @@ func (p *BMFRatesPlugin) handleGetMarkets(params map[string]any) plugin.Response
 		// Each rate pair is FOREIGN/EUR — "how many EUR for 1 unit of FOREIGN"
 		markets = append(markets, trading.Market{
 			Label:             currency + "/EUR",
-			AssetType:         "spot",
+			AssetType:         trading.AssetTypeSpot,
 			QuantityPrecision: 4,
 			PricePrecision:    4,
 			Symbol:            currency + "/EUR",
